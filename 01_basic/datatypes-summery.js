@@ -56,3 +56,44 @@ let myObj ={
  }
 
  console.log (typeof Symbol);
+
+
+
+
+
+
+ //....................................................................................................
+
+                    // MEMORY
+ 
+//  There are two types of memory  stack  or heap.
+
+// (1)  Stack memory is only using in (Primative types datatypes). stack value give us copy of values.
+
+// (2) Heap memory is only using in (non primitive datatypes). heap value give us refrence of value mean it will change a original number values. 
+
+      // stack
+ 
+let myYoutubename = "satyajeetsinghgusain vlogs"
+
+let anothername = myYoutubename
+anothername ="chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+      //heap
+
+let userOne ={
+
+ email:"slosan@gmail.com",
+ upi:"1458922@pbl"
+
+}
+
+let userTwo = userOne
+userTwo.email = "satya@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
