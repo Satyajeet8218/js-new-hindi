@@ -11,11 +11,13 @@ console.log(balance.toFixed(2));
 const otherNumber = 123.6896
 console.log(otherNumber.toPrecision(3));
 
-const hundreds = 10000000          // this is using in uSA style values.
-console.log(hundreds.toLocaleString());
+const thoushand = 100000000
+console.log((10000000        // this is using in uSA style values.
+    ).toLocaleString());
 
 const hundreds = 10000000         // using Indian style values.
-console.log(hundreds.toLocaleString('en-IN'));
+console.log((10000000 // this is using in uSA style values.
+    ).toLocaleString('en-IN'));
 
 
 
