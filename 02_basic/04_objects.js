@@ -41,11 +41,32 @@ const obj3 = {...obj1, ...obj2, ...obj4}  // usefull or easy sintex.
 //console.log(obj3);
 
 
-console.log(tinderUser);
+//console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+//console.log(Object.keys(tinderUser));
+//console.log(Object.values(tinderUser));
+//console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
-console.log(Object.hasOwnProperty('isLoggedOut'));
+//console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+//console.log(Object.hasOwnProperty('isLoggedOut'));
+
+
+              //  D structuring of Objects
+   
+     const Course = {
+            
+        coursename: "Java script course",
+        price: "free",
+        courseInstructor: "Hitesh Chaudhary"
+        
+
+     }  
+     
+     // Course.courseInstructor
+ 
+
+     //const{courseInstructor} = Course  
+     //console.log(courseInstructor);
+
+      const{courseInstructor: Instructor} =Course
+      console.log(Instructor);
