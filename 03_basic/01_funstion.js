@@ -68,8 +68,61 @@ const result = addTwoNumbers(10, 10)
 
 // console.log(loginUserMessage("satyajeet singh gusain"));
 
-  console.log(loginUserMessage("satyajeet singh gusain"));    // If we will not give values then it will print as undefined.
+ // console.log(loginUserMessage("satyajeet singh gusain"));    // If we will not give values then it will print as undefined.
 
 
-  
+    //function to to make a shopping card and many more .
+
+
+    //function calculateCartPrice(...num1){    // (....) it is called as rest operator.
+
+      //return num1
+   // }
+
+   // console.log(calculateCartPrice(200, 300, 400, 500));
+
+
+    function calculateCartPrice( val1, val2, ...num1){
+
+      return num1
+    }
+
+
+    //console.log(calculateCartPrice(200, 300, 400, 500));
+
+
+         //how to pass object.
+
+    const user = {
+   
+      username: "satyajeet singh gusain",
+      price: 500
+    }
+
+    function handObject(anyobject){
+
+     console.log(`username is ${anyobject.username} and  PRICE is ${anyobject.price}`);
+
+    }
+
+    //handObject(user)
+   
+    handObject({
+
+      username: "sonu",
+      price: 299
+
+    })
+
+    
+   // how to pass array
+
+   const myNewArray = [200, 400, 500, 600]
+   function retunSecondValue(getArray){
+    
+        return getArray[1]
+   }
+
+   console.log(retunSecondValue(myNewArray));
+   console.log(retunSecondValue([200, 400, 500, 600]));
 
