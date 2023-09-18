@@ -25,6 +25,65 @@
      console.log("INNER;", a );
  }
 
-console.log(a);
+console.log(a);  
 //console.log(b);
  //console.log(c);
+
+
+ function one(){
+
+    const username ="satyajeet singh gusain"
+
+
+    function two(){
+                                       // we can say closer scope.
+
+        const website = "youtube"  // whenever Nasted functions  child variables can access the parents variable. 
+        console.log(username);
+    } 
+
+   // console.log(website);
+
+    two()
+    
+ }
+
+one()
+
+//we can also use nasted type  iside the if, else. 
+
+if(true) {
+
+    const username ="satyajeet"
+    if(username === "satyajeet"){
+
+       const website =" youtube"
+       
+       //console.log(username + website);
+
+    }
+
+    //console.log(website);
+    
+}
+
+//console.log(username);
+
+
+// ..................................Intresting............................................//
+
+
+console.log(addone(5))   // giving console.log.
+function addone(value){
+    
+    return value + 1
+    
+}
+
+
+
+addTwo(5)
+const addTwo = function(value){     //addTwo it is variable but we can say expresion some time.
+    
+    return value + 2
+}
