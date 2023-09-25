@@ -33,10 +33,26 @@ coding.forEach( (item, index, arr) => {
 } )
 
 
-const mycoding = [ 
+const myCoding = [ 
+
 {
-    languageName: 'Javascript',
-    language
-}
+    languageName: "Javascript",
+    languageFileName:"js"
+},
+{
+    languageName: "paython",
+    languageFileName:"py"
+},
+
+{
+    languageName: "cPP",
+    languageFileName:"c++"
+},
 
 ]
+
+myCoding.forEach( (item) => {            // For Each loop
+   
+  console.log(item.languageFileName);
+
+})
